@@ -1,0 +1,34 @@
+.la{
+    height: 70px;
+    border-radius: 10px;
+
+}
+.le{
+    background-color: black;
+}
+.ol{
+    height: 30px;
+}
+.be{
+    background-color: black;
+    height: 50px;
+}
+.number{
+    display: flex;
+    width: 70px;
+    height: 50px;
+    border:3px solid black;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-left: 120px;
+}
+.ki{
+    height: 5px;
+    background-color: black;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/calculatrice.css">
+    <link rel="stylesheet" href="CSS/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATRICE</title>
+</head>
+<body>
+    <header class="ol">
+        <marquee><h4>LEMBE ENRIQUE DUHANE -- B1</h4></marquee>
+    </header>
+    <main>
+        <div class="row ki"></div>
+        <div class="row la">
+            <div class="col-md-1 le"></div>
+            <div class="col-md-10" id="resultat"></div>
+            <div class="col-md-1 le"></div>
+        </div>
+        <div class="row ki"></div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number1" onclick=" appendvalue('1')" >1</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number2" onclick=" appendvalue('2')">2</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number3" onclick=" appendvalue('3')">3</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="plus" onclick="appendvalue('+')">+</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number4" onclick="appendvalue('4')" >4</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number5" onclick="appendvalue('5')" >5</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number6" onclick="appendvalue('6')">6</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="-" onclick="appendvalue('-')">-</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number7" onclick="appendvalue('7')">7</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number8" onclick="appendvalue('8')">8</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number9" onclick="appendvalue('9')">9</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="fois" onclick="appendvalue('*')">x</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="virgule" onclick="appendvalue('.')">.</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="number0" onclick="appendvalue('0')">0</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="effacer" onclick="effacerDernier()">&lAarr;</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="diviser" onclick="appendvalue('/')">/</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="cosinus" onclick="">cos</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="sinus" onclick="calculateSin()">sin</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="vider" onclick="effacertout()">CE</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="carre" onclick="appendvalue('**2')">²</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row be">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="history">History</button>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="number" id="egal" onclick="calculer()">=</button>
+            </div>
+            <div class="col-md-2"> 
+                
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </main>
+    <script src="JS/calculatrice.js"></script>
+</body>
+</html>
